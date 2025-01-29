@@ -13,7 +13,7 @@ function App() {
       {/* 5:Utiliza o componente importado no JSX */}
       <FunctionalComponent />
       <ClassComponent/>
-      <PropsExample nome="Jeff"/>
+      <PropsExample nome="Jeff" idade={35}/>
     </>
   );
 }
