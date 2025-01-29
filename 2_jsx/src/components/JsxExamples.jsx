@@ -14,6 +14,8 @@ const JsxExamples = () => {
 
   const isUserLoggedIn = false;
 
+  const userRole = "admin";
+
   return (
     <div>
       {/* BASICO */}
@@ -49,6 +51,14 @@ const JsxExamples = () => {
           <p>Caso: NAO está logado</p>
         </div>
       )}
+
+      <p>
+        {userRole === "admin" && (
+          <div>
+            <p>Você é um admin</p>
+          </div>
+        )}
+      </p>
     </div>
   );
 };
