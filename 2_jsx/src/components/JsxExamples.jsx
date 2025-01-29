@@ -8,6 +8,10 @@ const JsxExamples = () => {
     lastName: "Senna",
   };
 
+  function getGreeting(name) {
+    return `Olá ${name}`;
+  }
+
   return (
     <div>
       <h2>Conteúdo que o usuário vai ver</h2>
@@ -19,6 +23,9 @@ const JsxExamples = () => {
       </p>
 
       <p>{2 + 2}</p>
+
+      <p>{getGreeting(userName)}</p>
+      <p>{getGreeting("Jeff")}</p>
     </div>
   );
 };
