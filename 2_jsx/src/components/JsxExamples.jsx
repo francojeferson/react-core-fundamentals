@@ -16,6 +16,12 @@ const JsxExamples = () => {
 
   const userRole = "admin";
 
+  const users = [
+    { id: 1, name: "joao" },
+    { id: 2, name: "jose" },
+    { id: 3, name: "jaci" },
+  ];
+
   return (
     <div>
       {/* BASICO */}
@@ -52,13 +58,18 @@ const JsxExamples = () => {
         </div>
       )}
 
-      <p>
-        {userRole === "admin" && (
-          <div>
-            <p>Você é um admin</p>
-          </div>
-        )}
-      </p>
+      <p>{userRole === "admin" && "Você é um admin"}</p>
+
+      {/* Renderizaçao de listas */}
+      <div>
+        <ul>
+          {users.map((user) => (
+            <li key={user.id}>
+              {user.id} - {user.name}
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
