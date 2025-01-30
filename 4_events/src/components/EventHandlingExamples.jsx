@@ -9,9 +9,11 @@ const EventHandlingExamples = () => {
     alert(`Olá ${name}`);
   };
 
+  const [name, setName] = useState("");
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("enviado!");
+    alert(`enviado! ${name}`);
   };
 
   return (
@@ -23,7 +25,7 @@ const EventHandlingExamples = () => {
       <button onClick={() => handleGreet("Ayrton")}>Dizer Olá Ayrton</button>
       <br />
       <form onSubmit={handleSubmit}>
-        <input type="text" placeholder="Digite seu nome" />
+        <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Digite seu nome" />
         <input type="submit" value="Enviar" />
       </form>
     </div>
