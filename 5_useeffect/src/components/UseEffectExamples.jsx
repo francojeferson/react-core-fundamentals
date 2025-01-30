@@ -18,7 +18,7 @@ const UseEffectExamples = () => {
   // com dependencias
   useEffect(() => {
     console.log("rodou UE3");
-  }, [count2]);
+  }, [count, count2]);
 
   return (
     <div>
