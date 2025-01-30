@@ -2,6 +2,8 @@ import React from "react";
 
 import "./StylesExamples.css";
 
+import styles from "./StylesExamples.module.css";
+
 const StylesExamples = () => {
   // inline
   const inlineStyle = {
@@ -13,8 +15,11 @@ const StylesExamples = () => {
     <div>
       <h2 style={inlineStyle}>Estilos inline</h2>
 
-      {/* arquivo de estilos */}
+      {/* arquivo de estilos - vaza */}
       <p className="text">Meu CSS</p>
+
+      {/* CSS Modules - nao vaza */}
+      <p className={styles.textPurple}>Meu CSS Modules</p>
     </div>
   );
 };
