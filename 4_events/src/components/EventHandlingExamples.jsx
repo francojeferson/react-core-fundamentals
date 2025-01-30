@@ -8,7 +8,7 @@ const EventHandlingExamples = () => {
   return (
     <div>
       <button onClick={() => alert("oi")}>Clique aqui</button>
-      <button onClick={handleClick}>Clique aqui 2</button>
+      <button onClick={handleClick}>Clique aqui</button>
     </div>
   );
 };
