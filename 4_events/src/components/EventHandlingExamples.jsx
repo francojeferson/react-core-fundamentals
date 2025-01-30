@@ -9,6 +9,11 @@ const EventHandlingExamples = () => {
     alert(`Olá ${name}`);
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("enviado!");
+  };
+
   return (
     <div>
       <button onClick={() => alert("oi")}>Clique aqui</button>
@@ -16,6 +21,11 @@ const EventHandlingExamples = () => {
       <br />
       <button onClick={() => handleGreet("Leonardo")}>Dizer Olá Leonardo</button>
       <button onClick={() => handleGreet("Ayrton")}>Dizer Olá Ayrton</button>
+      <br />
+      <form onSubmit={handleSubmit}>
+        <input type="text" placeholder="Digite seu nome" />
+        <input type="submit" value="Enviar" />
+      </form>
     </div>
   );
 };
