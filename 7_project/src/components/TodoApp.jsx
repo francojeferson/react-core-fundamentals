@@ -1,11 +1,14 @@
 import { useState } from "react";
 
-import "./TodoApp";
+import "./TodoApp.css";
 
 const TodoApp = () => {
+  // lista de tarefas
+  const [todos, setTodos] = useState([]);
+
   return (
     <div>
-      <h2>todoapp</h2>
+      <h1 className="title">Lista de Tarefas</h1>
     </div>
   );
 };
