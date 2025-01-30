@@ -13,16 +13,18 @@ const UseEffectExamples = () => {
 
   // usestate ativa a re-renderizaçao
   const [count, setCount] = useState(0);
+  const [count2, setCount2] = useState(0);
 
   // com dependencias
   useEffect(() => {
     console.log("rodou UE3");
-  }, [count]);
+  }, [count2]);
 
   return (
     <div>
       <p>{count}</p>
       <button onClick={() => setCount(count + 1)}>Aumentar contagem</button>
+      <button onClick={() => setCount2(count2 + 1)}>Aumentar contagem 2</button>
     </div>
   );
 };
