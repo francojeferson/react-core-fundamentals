@@ -3,7 +3,7 @@ import React from "react";
 const StylesExamples = () => {
   // inline
   const inlineStyle = {
-    color: "red",
+    color: "blue",
     fontSize: "20px",
   };
 
