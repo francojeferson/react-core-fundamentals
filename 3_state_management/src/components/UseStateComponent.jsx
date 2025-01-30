@@ -12,7 +12,7 @@ const UseStateComponent = () => {
     <div>
       <h2>Contador</h2>
       <p>Você clicou {count} vezes</p>
-      <button onClick={increment()}>Incrementar</button>
+      <button onClick={increment}>Incrementar</button>
     </div>
   );
 };
