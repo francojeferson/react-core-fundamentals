@@ -7,7 +7,8 @@ const UseStateComponent = () => {
   const [count, setCount] = useState(0);
 
   const increment = () => {
-    setCount(count + 1);
+    setCount((prevCount) => prevCount + 1);
+    // setCount(count + 1);
     console.log(count);
   };
 
