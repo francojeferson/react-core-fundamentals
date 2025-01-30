@@ -1,7 +1,9 @@
+import TodoApp from "./components/TodoApp";
+
 function App() {
   return (
     <>
-      <h2>project</h2>
+      <TodoApp />
     </>
   );
 }
