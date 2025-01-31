@@ -2,6 +2,10 @@ import { useState } from "react";
 
 import "./TodoApp.css";
 
+// TODO: salvar itens localStorage
+// TODO: carregar itens com useEffect
+// TODO: deletar itens com funçao e evento
+
 const TodoApp = () => {
   // lista de tarefas
   const [todos, setTodos] = useState([]);
