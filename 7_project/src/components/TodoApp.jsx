@@ -11,13 +11,24 @@ const TodoApp = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (inputValue.trim() !== "") {
+      const newTodo = {
+        id: Date.now(),
+        text: inputValue,
+      };
+
+      setTodos((prevTodos) => [...prevTodos, newTodo]);
+
+      setInputValue("");
+    }
   };
 
   return (
     <div className="app-container">
       <h1 className="title">Lista de Tarefas</h1>
       {/* form pra adicionar tarefas */}
-      <form obSubmit={handleSubmit} className="form-container">
+      <form onSubmit={handleSubmit} className="form-container">
         <input
           type="text"
           className="input-field"
