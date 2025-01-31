@@ -43,6 +43,14 @@ const TodoApp = () => {
 
       {/* lista de tarefas */}
       {todos.length === 0 && <p className="empty">nao há tarefas.</p>}
+
+      <ul className="todo-list">
+        {todos.map((todo) => (
+          <li key={todo.id} className="todo-item">
+            {todo.text}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
