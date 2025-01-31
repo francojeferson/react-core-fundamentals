@@ -48,6 +48,7 @@ const TodoApp = () => {
         {todos.map((todo) => (
           <li key={todo.id} className="todo-item">
             {todo.text}
+            <button className="delete-button">Excluir</button>
           </li>
         ))}
       </ul>
