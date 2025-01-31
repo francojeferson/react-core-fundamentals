@@ -9,6 +9,10 @@ const TodoApp = () => {
   return (
     <div>
       <h1 className="title">Lista de Tarefas</h1>
+      {/* form pra adicionar tarefas */}
+
+      {/* lista de tarefas */}
+      {todos.length === 0 && <p className="empty">nao há tarefas.</p>}
     </div>
   );
 };
